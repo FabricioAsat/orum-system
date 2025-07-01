@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0b0f2a; /*   violet dark (fondo principal)*/
+  --color-semi-background: #11153a; /*   violet navy (fondo secundario / cards)*/
+
+  --color-title-white: #ffffff; /*   pure white (títulos)*/
+  --color-text-soft: #b6b9d1; /*   soft white-gray (texto secundario)*/
+
+  --color-primary: #5f45ff; /*   vibrant violet (botones principales)*/
+  --color-primary-hover: #8a6fff; /*   lighter violet (hover de botón)*/
+  --color-gradient-start: #5f45ff; /*   gradient start (violet)*/
+  --color-gradient-end: #874efe; /*   gradient end (violet más claro)*/
+
+  --color-outline-text: #c0c3e8; /*   light gray-blue (bordes, íconos)*/
+
+  --color-input-bg: #1a1e3f; /*   dark navy (fondo de input)*/
+  --color-input-border: #2c3056; /*   subtle border (input border)*/
+  --color-placeholder: #8a8da8; /*   muted gray (placeholder)*/
+
+  --color-link: #8b5cf6; /*   violet link (enlaces)*/
+  --color-link-hover: #a78bfa; /*   light violet (hover enlace)*/
+
+  --color-success: #4ade80; /*   green (éxito)*/
+  --color-error: #f87171; /*   red (error)*/
+  --color-warning: #facc15; /*   yellow (advertencia)*/
+
+  --color-shadow-glow: #7c3aed; /*   glow violet (sombra neón)*/
+}
