@@ -21,6 +21,17 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    /* Aliases */
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@routes/*": ["routes/*"],
+      "@layouts/*": ["layouts/*"]
+    }
   },
   "include": ["src"]
 }

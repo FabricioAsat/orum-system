@@ -26,4 +26,10 @@
   --color-warning: #facc15; /*   yellow (advertencia)*/
 
   --color-shadow-glow: #7c3aed; /*   glow violet (sombra neón)*/
+
+  --font-nunito: "Nunito", sans-serif;
+}
+
+body {
+  @apply bg-background text-title-white font-nunito scroll-smooth;
 }
