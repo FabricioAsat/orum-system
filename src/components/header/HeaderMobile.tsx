@@ -80,7 +80,7 @@ export const HeaderMobile = () => {
                                   isActive
                                     ? "text-link"
                                     : "hover:text-placeholder"
-                                } block px-4 py-1 font-bold transition-colors duration-200`
+                                } flex items-center gap-2 px-4 py-1 font-bold transition-colors duration-200`
                               }
                             >
                               {item.icon}
