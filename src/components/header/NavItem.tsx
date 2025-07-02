@@ -49,7 +49,7 @@ export const NavItem = ({ label, to, dropdown }: NavItemProps) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="absolute left-0 top-full w-48 bg-transparent backdrop-blur-xs shadow-xl rounded-md z-50"
+            className="absolute left-0 top-full w-48 bg-background shadow-xl rounded-md z-50"
           >
             {dropdown.map((item) => (
               <NavLink
