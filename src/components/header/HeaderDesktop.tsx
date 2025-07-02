@@ -7,7 +7,7 @@ export const HeaderDesktop = () => {
     <div className="max-w-7xl mx-auto items-center h-16 bg-background hidden md:flex">
       <Logo />
 
-      <nav className="hidden md:flex items-center justify-center gap-x-10 mx-auto font-medium h-full px-4">
+      <nav className="hidden md:flex items-center justify-center gap-x-6 mx-auto font-medium h-full px-4">
         {navLinks.map((link) => (
           <NavItem
             key={link.label}

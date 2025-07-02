@@ -83,6 +83,7 @@ export const HeaderMobile = () => {
                                 } block px-4 py-1 font-bold transition-colors duration-200`
                               }
                             >
+                              {item.icon}
                               {item.label}
                             </NavLink>
                           ))}
