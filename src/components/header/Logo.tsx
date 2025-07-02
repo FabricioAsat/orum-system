@@ -1,9 +1,14 @@
-import logoIMG from "@assets/logo-orum.png";
+import logoIMG from "@assets/logo-orum.jpg";
+import { Link } from "react-router-dom";
 
 export const Logo = () => {
   return (
-    <picture>
-      <img src={logoIMG} alt="Logo Orum System" />
-    </picture>
+    <Link to={"/"} className="h-full">
+      <img
+        src={logoIMG}
+        alt="Logo Orum System"
+        className="h-full grayscale hover:grayscale-0 cursor-pointer max-h-16"
+      />
+    </Link>
   );
 };

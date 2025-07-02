@@ -1,35 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0b0f2a; /*   violet dark (fondo principal)*/
-  --color-semi-background: #11153a; /*   violet navy (fondo secundario / cards)*/
+  --color-background: #1b1a1d; /* deep graphite (fondo principal) */
+  --color-surface: #2c2b2e; /* charcoal gray (cards, headers) */
+  --color-border: #5a5a5e; /* slate gray (bordes, divisores) */
 
-  --color-title-white: #ffffff; /*   pure white (títulos)*/
-  --color-text-soft: #b6b9d1; /*   soft white-gray (texto secundario)*/
+  --color-text-main: #f7f7f7; /* soft white (texto principal) */
+  --color-text-muted: #e0e0e0; /* cloud white (texto secundario) */
+  --color-placeholder: #b6b9d1; /* muted gray (placeholder/input hint) */
 
-  --color-primary: #5f45ff; /*   vibrant violet (botones principales)*/
-  --color-primary-hover: #8a6fff; /*   lighter violet (hover de botón)*/
-  --color-gradient-start: #5f45ff; /*   gradient start (violet)*/
-  --color-gradient-end: #874efe; /*   gradient end (violet más claro)*/
+  --color-primary: #38d8d2; /* aqua mint (botones/enlaces) */
+  --color-primary-hover: #27b4af; /* aqua deep (hover/acento oscuro) */
+  --color-accent: #82f0ec; /* electric sky (detalles/efectos) */
 
-  --color-outline-text: #c0c3e8; /*   light gray-blue (bordes, íconos)*/
+  --color-success: #4ade80; /* green (éxito) */
+  --color-error: #f87171; /* red (error) */
+  --color-warning: #facc15; /* yellow (advertencia) */
 
-  --color-input-bg: #1a1e3f; /*   dark navy (fondo de input)*/
-  --color-input-border: #2c3056; /*   subtle border (input border)*/
-  --color-placeholder: #8a8da8; /*   muted gray (placeholder)*/
+  --color-input-bg: #1f1e22; /* input background */
+  --color-input-border: #39383a; /* input border */
 
-  --color-link: #8b5cf6; /*   violet link (enlaces)*/
-  --color-link-hover: #a78bfa; /*   light violet (hover enlace)*/
+  --color-link: #38d8d2; /* link igual que primary */
+  --color-link-hover: #82f0ec; /* hover en link (más claro) */
 
-  --color-success: #4ade80; /*   green (éxito)*/
-  --color-error: #f87171; /*   red (error)*/
-  --color-warning: #facc15; /*   yellow (advertencia)*/
-
-  --color-shadow-glow: #7c3aed; /*   glow violet (sombra neón)*/
+  --color-shadow-glow: #209e99; /* teal glow (sombra sutil/acento) */
 
   --font-nunito: "Nunito", sans-serif;
 }
 
 body {
-  @apply bg-background text-title-white font-nunito scroll-smooth;
+  @apply bg-background text-text-main font-nunito scroll-smooth;
 }
