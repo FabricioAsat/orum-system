@@ -65,7 +65,7 @@ export const HeaderMobile = () => {
                           initial={{ opacity: 0, y: -5 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -5 }}
-                          className="ml-4 mt-2 flex flex-col gap-1"
+                          className="ml-4 mt-2 flex flex-col gap-1 border-l border-border"
                         >
                           {link.dropdown.map((item) => (
                             <NavLink
