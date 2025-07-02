@@ -4,10 +4,10 @@ import { navLinks } from "./menuData";
 
 export const HeaderDesktop = () => {
   return (
-    <div className="max-w-7xl mx-auto items-center h-16 bg-background hidden md:flex">
+    <div className="hidden items-center mx-auto max-w-7xl h-16 select-none bg-background lg:flex">
       <Logo />
 
-      <nav className="hidden md:flex items-center justify-center gap-x-6 mx-auto font-medium h-full px-4">
+      <nav className="hidden gap-x-6 justify-center items-center px-4 mx-auto h-full font-medium lg:flex">
         {navLinks.map((link) => (
           <NavItem
             key={link.label}

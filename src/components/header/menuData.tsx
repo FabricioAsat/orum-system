@@ -16,12 +16,12 @@ export const navLinks = [
       {
         label: "Software a medida",
         to: "/services/software",
-        icon: <SoftwareSVG className="h-8 p-1" />,
+        icon: <SoftwareSVG className="p-1 h-8" />,
       },
       {
         label: "Asesoría técnica",
         to: "/services/consultancies",
-        icon: <ConsultSVG className="w-8 p-1" />,
+        icon: <ConsultSVG className="p-1 w-8" />,
       },
     ],
   },
@@ -32,12 +32,12 @@ export const navLinks = [
       {
         label: "Logic TR Brochure",
         to: "/download/logic-tr",
-        icon: <SoftwareSVG className="h-8 p-1" />,
+        icon: <SoftwareSVG className="p-1 h-8" />,
       },
       {
         label: "Logic T Brochure",
         to: "/download/logic-t",
-        icon: <SoftwareSVG className="h-8 p-1" />,
+        icon: <SoftwareSVG className="p-1 h-8" />,
       },
     ],
   },

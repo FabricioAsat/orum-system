@@ -29,5 +29,18 @@
 }
 
 body {
-  @apply bg-background text-text-main font-nunito scroll-smooth;
+  @apply bg-background text-text-main font-nunito scroll-smooth selection:bg-accent selection:text-surface;
+}
+
+.lines-mask {
+  background-image: linear-gradient(to right, #5a5a5e2e 1px, transparent 1px),
+    linear-gradient(to bottom, #f7f7f70a 1px, transparent 1px);
+  background-size: 14px 24px;
+  mask-image: radial-gradient(circle at center, white 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    white 30%,
+    transparent 70%
+  );
+  background-blend-mode: lighten;
 }

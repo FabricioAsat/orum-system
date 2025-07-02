@@ -5,15 +5,17 @@ import { HeaderMobile } from "@/components/header/HeaderMobile";
 
 export const DefaultLayout = () => {
   return (
-    <div className="p-2">
-      <header className="fixed top-0 left-0 w-full z-50 border-b-2 border-border md:border-0">
+    <div className="py-2">
+      {/* <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#5a5a5e2e_1px,transparent_1px),linear-gradient(to_bottom,#f7f7f70a_1px,transparent_1px)] bg-[size:14px_24px]"></div> */}
+
+      <header className="fixed top-0 left-0 z-50 w-full border-b-2 border-border md:border-0">
         <HeaderMobile />
         <HeaderDesktop />
       </header>
-      <main className="max-w-7xl mx-auto mt-16">
+      <main className="mx-auto mt-16 max-w-7xl">
         <Outlet />
       </main>
-      <footer>Footer</footer>
+      <footer className="mt-10 w-full text-center">Footer</footer>
     </div>
   );
 };

@@ -17,7 +17,7 @@ export const HeaderMobile = () => {
   };
 
   return (
-    <div className="md:hidden bg-background text-white p-4">
+    <div className="p-4 text-white select-none lg:hidden bg-background">
       <div className="flex justify-between items-center">
         <button
           onClick={() => setOpen(!open)}
@@ -47,7 +47,7 @@ export const HeaderMobile = () => {
                   <div key={link.label}>
                     <button
                       onClick={() => toggleDropdown(link.label)}
-                      className="w-full flex items-center cursor-pointer justify-start px-4 py-2 font-bold hover:text-placeholder transition-colors duration-200"
+                      className="flex justify-start items-center px-4 py-2 w-full font-bold transition-colors duration-200 cursor-pointer hover:text-placeholder"
                     >
                       {link.label}
                       <img
@@ -65,7 +65,7 @@ export const HeaderMobile = () => {
                           initial={{ opacity: 0, y: -5 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -5 }}
-                          className="ml-4 mt-2 flex flex-col gap-1 border-l border-border"
+                          className="flex flex-col gap-1 mt-2 ml-4 border-l border-border"
                         >
                           {link.dropdown.map((item) => (
                             <NavLink
