@@ -15,6 +15,7 @@ export const DefaultLayout = () => {
       <main className="mx-auto mt-16 max-w-7xl">
         <Outlet />
       </main>
+
       <footer className="mt-10 w-full text-center">Footer</footer>
     </div>
   );

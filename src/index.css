@@ -40,7 +40,7 @@ body {
   -webkit-mask-image: radial-gradient(
     circle at center,
     white 30%,
-    transparent 70%
+    transparent 50%
   );
   background-blend-mode: lighten;
 }

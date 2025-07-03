@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { ContactBox } from "@components/ContactBox";
 
-import { motion } from "framer-motion";
-
 import whatsappSVG from "@assets/svg/whatsapp.svg";
 import linkedinSVG from "@assets/svg/linkedin.svg";
 import instagramSVG from "@assets/svg/instagram.svg";
@@ -10,7 +8,7 @@ import mailSVG from "@assets/svg/mail.svg";
 
 export const Hero = () => {
   return (
-    <section className="flex overflow-hidden relative justify-center items-start px-6 py-24 w-full bg-background sm:pt-24 sm:pb-40">
+    <section className="flex overflow-hidden relative justify-center items-start px-6 py-24 w-full sm:pt-24 sm:pb-32">
       {/* Líneas verticales con desenfoque radial */}
       <div className="absolute inset-0 z-0 pointer-events-none lines-mask" />
 
@@ -27,7 +25,7 @@ export const Hero = () => {
             Innovación a medida
           </h2>
         </span>
-        <p className="mb-8 text-xs italic sm:text-base text-text-muted">
+        <p className="mb-8 text-xs italic sm:text-base text-placeholder">
           Diseñamos soluciones electrónicas y de software que se adaptan a las
           necesidades reales de cada cliente, integrando innovación, precisión y
           funcionalidad en cada etapa del proceso.

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import type { FC, ReactNode } from "react";
 
 interface IconGlowBoxProps {
   imgSrc: string;
