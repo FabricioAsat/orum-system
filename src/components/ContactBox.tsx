@@ -15,7 +15,11 @@ export const ContactBox = ({
 }: IconGlowBoxProps) => {
   return (
     <motion.div
-      className={`p-2 w-10 h-10 rounded-md border shadow-md backdrop-blur-sm cursor-pointer border-primary/10 bg-primary/25`}
+      className={`p-2 w-10 h-10 rounded-md border shadow-md backdrop-blur-sm cursor-pointer`}
+      style={{
+        borderColor: `${glowColor}10`,
+        backgroundColor: `${glowColor}25`,
+      }}
       whileHover={{
         scale: 1.1,
         backgroundColor: `${glowColor}25`, // 20 = ~12% alpha
