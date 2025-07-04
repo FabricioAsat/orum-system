@@ -39,7 +39,7 @@ export const ServicesHome = () => {
   const [active, setActive] = useState<keyof typeof data>("Software");
 
   return (
-    <div className="relative px-4 py-8 mx-auto w-full max-w-4xl">
+    <section className="relative px-4 py-8 mx-auto w-full max-w-4xl">
       <div className="flex flex-col justify-center items-center mx-auto mb-10 max-w-xl">
         <h2 className="text-xl font-extrabold md:text-2xl xl:text-3xl">
           Nuestros servicios
@@ -104,6 +104,6 @@ export const ServicesHome = () => {
           </nav>
         </motion.div>
       </AnimatePresence>
-    </div>
+    </section>
   );
 };

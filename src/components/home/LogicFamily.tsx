@@ -14,7 +14,7 @@ export const LogicFamily = () => {
   };
 
   return (
-    <div className="mx-auto mt-12 max-w-4xl md:my-24 lg:grid-cols-3">
+    <section className="mx-auto my-12 max-w-4xl md:my-24 lg:grid-cols-3">
       <div
         onMouseEnter={handleEnter}
         onMouseLeave={handleExit}
@@ -50,6 +50,6 @@ export const LogicFamily = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
