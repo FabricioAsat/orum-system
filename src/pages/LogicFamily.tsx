@@ -5,11 +5,12 @@ import logicIMG from "@assets/logic.jpg";
 import { PageContainer } from "@/components/PageContainer";
 import { LogicT } from "@/components/logic-family/LogicT";
 import { LogicP } from "@/components/logic-family/LogicP";
+import { LogicPV } from "@/components/logic-family/LogicPV";
 
 const data = {
   "Logic-T": <LogicT />,
   "Logic-P": <LogicP />,
-  "Logic-PV": <div>asdadsdas</div>,
+  "Logic-PV": <LogicPV />,
   "Logic-D": <div>asdadsdas</div>,
   "Logic-TR": <div>asdadsdas</div>,
 };

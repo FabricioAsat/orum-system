@@ -8,7 +8,7 @@ import hrIMG from "@assets/svg/modules/hr.svg";
 import maintenanceIMG from "@assets/svg/modules/maintenance.svg";
 import warehouseIMG from "@assets/svg/modules/warehouse.svg";
 
-export const LogicP = () => {
+export const LogicPV = () => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 10 }}
@@ -21,16 +21,23 @@ export const LogicP = () => {
         {/* Título principal */}
         <h2 className="text-4xl font-bold text-primary">Logic‑P</h2>
         <p className="mt-2 text-xl font-medium text-success">
-          Gestión integral para empresas productivas
+          Gestión integral para puntos de venta únicos o múltiples
         </p>
 
         {/* Descripción principal */}
         <p className="mt-6 text-lg text-text-muted">
-          Logic‑P es una solución de software diseñada para optimizar cada etapa
-          del ciclo productivo de una empresa. A través de módulos
-          especializados, permite una gestión ágil y centralizada de las áreas
-          clave: ventas, compras, administración, producción, recursos humanos,
-          mantenimiento y más.
+          Logic‑PV es una solución completa diseñada para modernizar y agilizar
+          la gestión de comercios con uno o varios puntos de venta.
+          <br />
+          Desde el control de inventario hasta la facturación, el sistema
+          permite centralizar toda la operación de forma eficiente, segura y
+          adaptable a cualquier escala de negocio.
+          <br />
+          Pensado para locales, cadenas y comercios con visión de crecimiento,{" "}
+          <b>
+            Logic‑PV ofrece herramientas intuitivas que optimizan tiempos,
+            mejoran el control y reducen errores operativos.
+          </b>
         </p>
 
         {/* Características clave */}
@@ -39,36 +46,32 @@ export const LogicP = () => {
         </h3>
         <ul className="mt-4 space-y-2 list-disc list-inside text-placeholder">
           <li>
-            <strong>Gestión integral de procesos productivos:</strong> desde la
-            planificación hasta la ejecución y control.
+            <strong>Gestión integral de puntos de venta:</strong> unificá toda
+            la operación en una sola plataforma.
           </li>
           <li>
-            <strong>Informes analíticos detallados:</strong> por producto,
-            proceso, cliente y variables personalizadas.
+            <strong>Control total de inventario:</strong> con alertas por stock
+            mínimo y múltiples depósitos.
           </li>
           <li>
-            <strong>Estadísticas dinámicas:</strong> que brindan visibilidad en
-            tiempo real para la toma de decisiones.
+            <strong>Gestión de personal:</strong> con marcación horaria local o
+            remota, incluso mediante biometría.
           </li>
           <li>
-            <strong>Órdenes de producción automatizadas:</strong> con
-            posibilidad de impresión, envío por correo o App.
+            <strong>Facturación electrónica y órdenes de compra:</strong> con
+            soporte para impresoras fiscales.
           </li>
 
           <li>
             <strong>Base de datos centralizada y acceso remoto seguro:</strong>{" "}
-            ideal para equipos distribuidos.
+            ideal para monitorear desde cualquier lugar.
           </li>
           <li>
             <strong>Gestión de usuarios con permisos diferenciados:</strong>{" "}
-            para mantener el control y la seguridad.
+            adaptable a cada rol del equipo.
           </li>
           <li>
             <strong>Compatibilidad con Windows 10/11 (64 bits).</strong>
-          </li>
-          <li>
-            <strong>Sistema de marcación horaria:</strong> tanto local como
-            remoto, vía App con geolocalización.
           </li>
         </ul>
 
@@ -81,34 +84,6 @@ export const LogicP = () => {
         <div className="grid gap-4 mt-4 md:grid-cols-2 lg:grid-cols-3 text-text-muted">
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
-              src={salesIMG}
-              alt="Ventas Image"
-              className="mx-auto w-24 md:w-28 lg:w-32"
-            />
-            <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
-              Ventas
-            </h4>
-            <small className="text-sm text-center">
-              cotizaciones, gestión de clientes y pedidos.
-            </small>
-          </div>
-
-          <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
-            <img
-              src={purchaseIMG}
-              alt="Ventas Image"
-              className="mx-auto w-24 md:w-28 lg:w-32"
-            />
-            <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
-              Compras
-            </h4>
-            <small className="text-sm text-center">
-              Órdenes, proveedores y cuentas corrientes.
-            </small>
-          </div>
-
-          <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
-            <img
               src={adminIMG}
               alt="Ventas Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
@@ -117,22 +92,23 @@ export const LogicP = () => {
               Administración
             </h4>
             <small className="text-sm text-center">
-              Facturación, cobros, pagos y finanzas.
+              Gestión de clientes, proveedores, cuentas corrientes, pagos y
+              cobranzas.
             </small>
           </div>
 
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
-              src={productionIMG}
+              src={warehouseIMG}
               alt="Ventas Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
-              Producción
+              Inventario
             </h4>
             <small className="text-sm text-center">
-              Control total de los procesos productivos, con trazabilidad y
-              eficiencia.
+              Control de stock, alarmas automáticas por niveles críticos y
+              gestión de depósitos múltiples.
             </small>
           </div>
 
@@ -146,35 +122,22 @@ export const LogicP = () => {
               Recursos Humanos
             </h4>
             <small className="text-sm text-center">
-              Sueldos, contratos y asistencia.
+              Marcación de personal mediante biometría o credenciales seguras.
             </small>
           </div>
 
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
-              src={maintenanceIMG}
+              src={salesIMG}
               alt="Ventas Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
-              Mantenimiento
+              Ventas
             </h4>
             <small className="text-sm text-center">
-              Gestión integral de unidades.
-            </small>
-          </div>
-
-          <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
-            <img
-              src={warehouseIMG}
-              alt="Ventas Image"
-              className="mx-auto w-24 md:w-28 lg:w-32"
-            />
-            <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
-              Depósito
-            </h4>
-            <small className="text-sm text-center">
-              Control de stock e insumos.
+              Control de operaciones en múltiples cajas o sucursales,
+              estadísticas en tiempo real y reportes detallados.
             </small>
           </div>
         </div>
