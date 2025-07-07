@@ -51,6 +51,7 @@ export const ServicesHome = () => {
           proyecto.
         </p>
       </div>
+
       {/* Tabs */}
       <div className="flex gap-2 justify-start w-full">
         {Object.keys(data).map((key) => (
