@@ -16,7 +16,7 @@ export const LogicPV = () => {
     >
       <div className="mx-auto max-w-6xl">
         {/* Título principal */}
-        <h2 className="text-4xl font-bold text-primary">Logic‑P</h2>
+        <h2 className="text-4xl font-bold text-primary">Logic‑PV</h2>
         <p className="mt-2 text-xl font-medium text-success">
           Gestión integral para puntos de venta únicos o múltiples
         </p>
