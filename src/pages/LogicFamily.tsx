@@ -6,12 +6,13 @@ import { PageContainer } from "@/components/PageContainer";
 import { LogicT } from "@/components/logic-family/LogicT";
 import { LogicP } from "@/components/logic-family/LogicP";
 import { LogicPV } from "@/components/logic-family/LogicPV";
+import { LogicD } from "@/components/logic-family/LogicD";
 
 const data = {
   "Logic-T": <LogicT />,
   "Logic-P": <LogicP />,
   "Logic-PV": <LogicPV />,
-  "Logic-D": <div>asdadsdas</div>,
+  "Logic-D": <LogicD />,
   "Logic-TR": <div>asdadsdas</div>,
 };
 

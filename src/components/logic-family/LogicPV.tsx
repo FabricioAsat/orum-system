@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 
-import purchaseIMG from "@assets/svg/modules/purchasing.svg";
 import salesIMG from "@assets/svg/modules/sales.svg";
 import adminIMG from "@assets/svg/modules/administration.svg";
-import productionIMG from "@assets/svg/modules/production.svg";
 import hrIMG from "@assets/svg/modules/hr.svg";
-import maintenanceIMG from "@assets/svg/modules/maintenance.svg";
 import warehouseIMG from "@assets/svg/modules/warehouse.svg";
 
 export const LogicPV = () => {
