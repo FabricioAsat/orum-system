@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import logicIMG from "@assets/logic.jpg";
 import { PageContainer } from "@/components/PageContainer";
@@ -7,13 +8,14 @@ import { LogicT } from "@/components/logic-family/LogicT";
 import { LogicP } from "@/components/logic-family/LogicP";
 import { LogicPV } from "@/components/logic-family/LogicPV";
 import { LogicD } from "@/components/logic-family/LogicD";
+import { LogicTR } from "@/components/logic-family/LogicTR";
 
 const data = {
   "Logic-T": <LogicT />,
   "Logic-P": <LogicP />,
   "Logic-PV": <LogicPV />,
   "Logic-D": <LogicD />,
-  "Logic-TR": <div>asdadsdas</div>,
+  "Logic-TR": <LogicTR />,
 };
 
 export const LogicFamily = () => {
@@ -59,7 +61,39 @@ export const LogicFamily = () => {
         </div>
 
         <AnimatePresence mode="wait">{data[active]}</AnimatePresence>
-        {/* Content */}
+
+        {/* CTA */}
+
+        <div
+          className={`overflow-hidden relative mt-10 w-full border lg:rounded-lg border-surface`}
+        >
+          {/* Fondo con imagen en escala de grises */}
+          <aside
+            className={`absolute inset-0 bg-center bg-cover opacity-80 transition-all duration-300 -z-10 ${
+              true ? "grayscale-0 lg:scale-105" : "grayscale"
+            }`}
+            style={{ backgroundImage: `url(${logicIMG})` }}
+          />
+
+          {/* Overlay oscuro para mayor contraste */}
+          <div className="absolute inset-0 bg-background/70 -z-10" />
+
+          <div className="z-10 px-4 py-10 mx-auto my-10 text-center rounded-2xl text-text-main sm:px-12">
+            <h2 className="mb-4 text-2xl font-bold sm:text-3xl">
+              Gestioná tu negocio con toda la potencia de Logic
+            </h2>
+            <p className="mb-6 text-base sm:text-lg text-text-muted">
+              Turnos, Talleres, Presupuestos, Punto de Venta y Depósito — Todo
+              en un solo sistema pensado para crecer con vos.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block px-6 py-3 font-semibold rounded-full transition-colors duration-300 md:text-lg text-surface bg-primary hover:bg-primary-hover"
+            >
+              Consulta ya!
+            </Link>
+          </div>
+        </div>
       </section>
     </PageContainer>
   );

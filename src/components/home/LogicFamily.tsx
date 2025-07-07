@@ -1,6 +1,7 @@
 import { useState } from "react";
-import logicIMG from "@assets/logic.jpg";
 import { Link } from "react-router-dom";
+
+import logicIMG from "@assets/logic.jpg";
 
 export const LogicFamily = () => {
   const [enter, setEnter] = useState(false);

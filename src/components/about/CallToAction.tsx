@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 export const CallToAction = () => {
   return (
     <div className="mt-20 text-center">
-      <p className="mb-4 text-xl font-semibold text-text-main">
+      <h2 className="mb-4 text-2xl font-bold sm:text-3xl">
         ¿Listo para transformar tu idea en una solución real?
-      </p>
+      </h2>
       <Link
         to="/contact"
-        className="inline-block px-6 py-2 font-bold text-surface bg-primary rounded-full hover:bg-primary-hover transition-all duration-200"
+        className="inline-block px-6 py-3 font-semibold rounded-full transition-colors duration-300 md:text-lg text-surface bg-primary hover:bg-primary-hover"
       >
-        Contáctanos
+        Consulta ya!
       </Link>
     </div>
   );
