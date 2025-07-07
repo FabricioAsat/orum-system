@@ -4,10 +4,11 @@ import { AnimatePresence } from "framer-motion";
 import logicIMG from "@assets/logic.jpg";
 import { PageContainer } from "@/components/PageContainer";
 import { LogicT } from "@/components/logic-family/LogicT";
+import { LogicP } from "@/components/logic-family/LogicP";
 
 const data = {
   "Logic-T": <LogicT />,
-  "Logic-P": <div>asdadsdas</div>,
+  "Logic-P": <LogicP />,
   "Logic-PV": <div>asdadsdas</div>,
   "Logic-D": <div>asdadsdas</div>,
   "Logic-TR": <div>asdadsdas</div>,
@@ -18,11 +19,11 @@ export const LogicFamily = () => {
 
   return (
     <PageContainer>
-      <aside className="lg:pt-0 rounded-xl">
+      <aside className="rounded-xl lg:pt-0">
         <img
           src={logicIMG}
           alt="Logic Family"
-          className="mx-auto w-full max-h-96 object-cover grayscale rounded-xl"
+          className="object-cover mx-auto w-full max-h-96 rounded-xl grayscale"
         />
       </aside>
 
@@ -31,7 +32,7 @@ export const LogicFamily = () => {
           <h2 className="text-xl font-extrabold md:text-2xl xl:text-3xl">
             Familia Logic
           </h2>
-          <p className="text-xs italic text-center md:text-sm text-placeholder mt-3">
+          <p className="mt-3 text-xs italic text-center md:text-sm text-placeholder">
             Logic es una suite modular de software empresarial que integra lo
             mejor de la tecnología actual para transformar, automatizar y
             simplificar tus procesos productivos y de gestión.
@@ -39,7 +40,7 @@ export const LogicFamily = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-2 justify-start flex-wrap w-full">
+        <div className="flex flex-wrap gap-2 justify-start w-full">
           {Object.keys(data).map((key) => (
             <button
               key={key}
