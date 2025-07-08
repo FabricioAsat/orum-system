@@ -38,7 +38,7 @@ export const YourProject = ({
       <div className="flex-shrink-0 w-72 h-72 lg:h-96 lg:w-96">
         <img
           src={img}
-          alt="Tu proyecto aquí Image"
+          alt="Your project here Image"
           className="object-contain w-full h-full"
           draggable={false}
         />

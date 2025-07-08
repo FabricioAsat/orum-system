@@ -85,7 +85,7 @@ export const LogicTR = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={clientsIMG}
-              alt="Ventas Image"
+              alt="Clients Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -100,7 +100,7 @@ export const LogicTR = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={purchaseIMG}
-              alt="Ventas Image"
+              alt="Purchase Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -115,7 +115,7 @@ export const LogicTR = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={adminIMG}
-              alt="Ventas Image"
+              alt="Admin Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -129,7 +129,7 @@ export const LogicTR = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={maintenanceIMG}
-              alt="Ventas Image"
+              alt="Maintenance Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -173,7 +173,7 @@ export const LogicTR = () => {
           <div className="overflow-hidden w-full h-auto rounded-lg">
             <img
               src={workshopIMG}
-              alt="Dashboard de reportes Logic-T"
+              alt="Dashboard de reportes Logic-TR"
               className="object-cover mx-auto w-full rounded-lg max-w-96"
             />
           </div>

@@ -96,7 +96,7 @@ export const LogicP = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={purchaseIMG}
-              alt="Ventas Image"
+              alt="Purchase Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -110,7 +110,7 @@ export const LogicP = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={adminIMG}
-              alt="Ventas Image"
+              alt="Administration Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -124,7 +124,7 @@ export const LogicP = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={productionIMG}
-              alt="Ventas Image"
+              alt="Production Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -139,7 +139,7 @@ export const LogicP = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={hrIMG}
-              alt="Ventas Image"
+              alt="Human Resources Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -153,7 +153,7 @@ export const LogicP = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={maintenanceIMG}
-              alt="Ventas Image"
+              alt="Maintenance Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
@@ -167,7 +167,7 @@ export const LogicP = () => {
           <div className="flex flex-col items-center p-4 rounded-md border shadow bg-surface/25 border-surface">
             <img
               src={warehouseIMG}
-              alt="Ventas Image"
+              alt="Warehouse Image"
               className="mx-auto w-24 md:w-28 lg:w-32"
             />
             <h4 className="mt-2 text-base font-bold text-center text-text-main md:text-lg lg:text-xl">
