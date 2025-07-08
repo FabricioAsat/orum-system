@@ -15,6 +15,7 @@ const data = {
       "Adaptados a transporte, PyMEs y entes públicos.",
     ],
     icon: <SoftwareSVG className="w-6" />,
+    to:"services/software"
   },
   Electrónica: {
     title: "Desarrollo de placas electrónicas",
@@ -24,6 +25,7 @@ const data = {
       "Sistemas SCADA a medida.",
     ],
     icon: <ElectronicSVG className="w-6 rotate-90" />,
+    to:"services/electronic"
   },
   Asesoría: {
     title: "Asesoría técnica",
@@ -32,6 +34,7 @@ const data = {
       "Tecnología, proveedores internacionales y normativas.",
     ],
     icon: <ConsultSVG className="w-6" />,
+    to:"services/consultancies"
   },
 };
 
@@ -97,7 +100,7 @@ export const ServicesHome = () => {
 
           <nav className="mt-5">
             <Link
-              to={"/"}
+              to={data[active as keyof typeof data].to}
               className="px-2 py-2 mt-6 text-sm font-bold underline rounded-md transition cursor-pointer text-link hover:text-link-hover"
             >
               Saber más
