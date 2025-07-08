@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# Orum System Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web institucional de **Orum System**, desarrollado con tecnologías modernas para ofrecer una experiencia rápida, responsiva y atractiva.
 
-Currently, two official plugins are available:
+## 🛠 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** + **TypeScript** — UI declarativa y tipado seguro.
+- **TailwindCSS** — Estilado moderno y altamente personalizable mediante clases utilitarias.
+- **React Router DOM** — Navegación client-side sin recargas.
+- **Vite** — Bundler ultrarrápido para desarrollo.
+- **Bun** — Empaquetador ligero y eficiente usado junto a Vite.
 
-## Expanding the ESLint configuration
+## 📦 Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Asegurate de tener [Bun](https://bun.sh/) instalado globalmente:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+bun --version
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Luego cloná el repositorio y ejecutá:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+bun install
+bun dev
 ```
+
+Esto iniciará el servidor de desarrollo en `http://localhost:5173`.
+
+## 🚀 Scripts Disponibles
+
+- `bun dev` — Inicia el servidor de desarrollo.
+- `bun run build` — Genera una versión optimizada para producción.
+- `bun run preview` — Previsualiza el sitio ya compilado.
+
+## 🌐 Estructura del Proyecto
+
+```
+├── src/
+│   ├── components/     # Componentes reutilizables (botones, inputs, layouts, etc.)
+│   ├── pages/          # Vistas de navegación (Home, About, Contact, etc.)
+│   ├── routes/         # Definiciones de rutas con React Router
+│   ├── assets/         # Imágenes y SVGs optimizados
+│   └── App.tsx         # Componente raíz
+├── tailwind.config.ts  # Configuración de Tailwind
+├── index.html
+└── bun.lockb
+```
+
+## 🎨 Personalización
+
+El diseño utiliza un sistema de colores basado en el tema de Orum:
+
+- `bg-background`, `text-text-main`, `text-placeholder`, `bg-primary`, etc.
+- Definidos en `tailwind.config.ts` como variables CSS para mantener consistencia visual.
+
+## 🧩 Funcionalidades Destacadas
+
+- Animaciones fluidas con `framer-motion`.
+- Formulario de contacto con modal informativo.
+- Secciones con imágenes SVG personalizadas.
+- Responsive Design adaptado para dispositivos móviles y escritorio.
+
+## 📬 Contacto
+
+Desarrollado por [Fabricio Asat](mailto:info@orum-system.com)  
+Sitio oficial: [https://www.orum-system.com](https://www.orum-system.com)
+
+---
+
+> Este proyecto está en constante desarrollo. ¡Contribuciones y sugerencias son bienvenidas!
