@@ -63,6 +63,7 @@ export const ServiceSoftware = () => {
 
         {/* Cierre */}
         <YourProject
+          label="Realizar consulta"
           img={YourSoftwareIMG}
           title=" ¿Tu empresa necesita software a medida?"
           desc="Nuestro equipo puede ayudarte a digitalizar y automatizar tus procesos. Contanos tu idea y la convertimos en una solución real."

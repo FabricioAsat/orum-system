@@ -63,6 +63,7 @@ export const ServiceElectronic = () => {
         </div>
 
         <YourProject
+          label="Realizar consulta"
           img={YourProjectIMG}
           title="El próximo ejemplo será su proyecto"
           desc="¿Tenés una idea? Convertí tu concepto en una solución electrónica

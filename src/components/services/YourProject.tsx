@@ -5,9 +5,15 @@ interface YourProjectInterface {
   title: string;
   desc: string;
   img: string;
+  label: string;
 }
 
-export const YourProject = ({ title, desc, img }: YourProjectInterface) => {
+export const YourProject = ({
+  title,
+  desc,
+  img,
+  label,
+}: YourProjectInterface) => {
   return (
     <div className="flex flex-col items-center mx-auto mt-20 max-w-4xl rounded-2xl border shadow-md transition-shadow md:items-start md:flex-row border-surface">
       <div className="flex flex-col flex-1 items-center p-6 h-full lg:items-start md:text-left">
@@ -18,9 +24,14 @@ export const YourProject = ({ title, desc, img }: YourProjectInterface) => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-6 py-2 mt-5 font-bold rounded-md shadow-md transition-colors cursor-pointer bg-primary hover:bg-primary-hover text-surface"
+          className="mt-5"
         >
-          <Link to={"/contact"}>Consulta ahora</Link>
+          <Link
+            className="px-6 py-2 font-bold rounded-md shadow-md transition-colors cursor-pointer bg-primary hover:bg-primary-hover text-surface"
+            to={"/contact"}
+          >
+            {label}
+          </Link>
         </motion.button>
       </div>
 
