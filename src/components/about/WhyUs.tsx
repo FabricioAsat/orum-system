@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import focusIMG from "@assets/focus.jpg";
 import innovationIMG from "@assets/innovation.jpg";
 import engineerIMG from "@assets/engineer.jpg";
@@ -26,30 +28,40 @@ const features = [
 export const WhyUs = () => {
   return (
     <section className="py-20 mt-20 rounded-3xl">
-      <div className="mx-auto mb-12 max-w-6xl text-center px-4">
+      <div className="px-4 mx-auto mb-12 max-w-6xl text-center">
         <h2 className="text-4xl font-extrabold text-text-main">
           ¿Por qué elegirnos?
         </h2>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-3 justify-items-center px-4 max-w-7xl mx-auto">
+      <div className="grid gap-8 justify-items-center px-4 mx-auto max-w-7xl lg:grid-cols-3">
         {features.map((feature, i) => (
-          <div
+          <motion.div
             key={i}
-            className="overflow-hidden max-w-xl w-full relative h-80 bg-center bg-cover rounded-2xl shadow-xl group hover:scale-105 transition-all"
+            className="overflow-hidden relative w-full max-w-xl h-80 bg-center bg-cover rounded-2xl shadow-xl group"
             style={{
               backgroundImage: `url(${feature.img})`,
+            }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.35)",
+            }}
+            whileTap={{ scale: 0.97 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
             }}
           >
             <div className="absolute bottom-0 p-4 w-full backdrop-blur-sm bg-background/75">
               <h3 className="mb-1 text-lg font-bold text-link">
                 {feature.title}
               </h3>
-              <p className="text-sm text-text-muted italic">
+              <p className="text-sm italic text-text-muted">
                 {feature.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
