@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import logicIMG from "@assets/logic.jpg";
@@ -32,11 +32,11 @@ export const LogicFamily = () => {
       </aside>
 
       <section className="relative px-4 py-8 mx-auto w-full max-w-7xl">
-        <div className="flex flex-col justify-start items-center lg:items-start mb-10 max-w-3xl">
+        <div className="flex flex-col justify-start items-center mb-10 max-w-3xl lg:items-start">
           <h2 className="text-2xl font-extrabold md:text-3xl xl:text-4xl">
             Familia Logic
           </h2>
-          <p className="mt-3 text-base italic md:text-lg text-text-muted text-center lg:text-start">
+          <p className="mt-3 text-base italic text-center md:text-lg text-text-muted lg:text-start">
             Logic es una suite modular de software empresarial que integra lo
             mejor de la tecnología actual para transformar, automatizar y
             simplificar tus procesos productivos y de gestión.
@@ -86,12 +86,13 @@ export const LogicFamily = () => {
               Turnos, Talleres, Presupuestos, Punto de Venta y Depósito — Todo
               en un solo sistema pensado para crecer con vos.
             </p>
-            <Link
-              to="/contact"
-              className="inline-block px-6 py-3 font-semibold rounded-full transition-colors duration-300 md:text-lg text-surface bg-primary hover:bg-primary-hover"
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block px-6 py-3 font-bold rounded-full transition-colors duration-300 cursor-pointer md:text-lg text-surface bg-primary hover:bg-primary-hover"
             >
-              Consulta ya!
-            </Link>
+              <Link to="/contact">Consulta ya!</Link>
+            </motion.button>
           </div>
         </div>
       </section>

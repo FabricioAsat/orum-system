@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import { ContactBox } from "@components/ContactBox";
@@ -40,19 +41,20 @@ export const Hero = () => {
         </p>
 
         <nav className="flex flex-col gap-4 justify-center items-center select-none sm:flex-row sm:gap-6">
-          <Link
-            to={"/contact"}
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="px-6 py-2 w-full font-bold rounded-full transition cursor-pointer bg-primary hover:bg-primary-hover text-background sm:w-auto"
           >
-            Contacta ya →
-          </Link>
-
-          <Link
-            to={"/about"}
+            <Link to={"/contact"}>Contacta ya →</Link>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="px-6 py-2 w-full font-bold text-white rounded-full border-2 transition cursor-pointer border-border hover:bg-surface/50 sm:w-auto"
           >
-            Saber más
-          </Link>
+            <Link to={"/about"}>Saber más</Link>
+          </motion.button>
         </nav>
       </div>
       <nav className="hidden flex-col gap-y-3 justify-center items-center px-2 ml-10 h-full lg:flex">
