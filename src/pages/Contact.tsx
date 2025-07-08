@@ -9,7 +9,7 @@ export const Contact = () => {
 
   return (
     <PageContainer>
-      <div className="grid gap-8 items-start lg:grid-cols-2">
+      <div className="grid gap-8 items-start pt-10 lg:grid-cols-2">
         {/* Info de contacto */}
         <div className="px-2 mx-auto mt-10 space-y-4 w-full max-w-xl text-text-muted">
           <span className="flex flex-col w-full">

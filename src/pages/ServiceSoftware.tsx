@@ -10,23 +10,23 @@ import { ServiceProject } from "@/components/services/ServiceProject";
 
 const softwareProjects = [
   {
-    title: "Sistema de Gestión Integral para Empresa de Transporte",
-    desc: "Plataforma que unifica contabilidad, inventario, ventas y recursos humanos para optimizar la administración completa del negocio.",
+    title: "Plataforma Integral para Gestión de Empresas de Transporte",
+    desc: "Sistema completo que centraliza contabilidad, inventario, ventas y recursos humanos, mejorando la trazabilidad, eficiencia operativa y control administrativo.",
     img: SystemTransportIMG,
   },
   {
-    title: "Aplicación de Control de Taxímetros",
-    desc: "Solución multiplataforma (PC y móvil) para calibración precisa de taxímetros y tacógrafos, con interfaz intuitiva.",
+    title: "App para Calibración y Control de Taxímetros y Tacógrafos",
+    desc: "Solución multiplataforma (PC + móvil) que permite registrar, auditar y validar procesos de calibración con precisión y cumplimiento normativo.",
     img: TaximeterIMG,
   },
   {
-    title: "Sistema de Gestión de Plantas Verificadoras",
-    desc: "Automatización integral de plantas verificadoras técnicas, reduciendo tiempos de operación y minimizando errores.",
+    title: "Sistema de Gestión Inteligente para Plantas Verificadoras Técnicas",
+    desc: "Automatización de procesos críticos en plantas VTV, eliminando errores manuales, mejorando los tiempos de respuesta y asegurando integridad de los datos.",
     img: PlantControlIMG,
   },
   {
-    title: "Plataforma de Análisis de Datos",
-    desc: "Herramienta de análisis en tiempo real para visualizar, gestionar y tomar decisiones basadas en grandes volúmenes de datos.",
+    title: "Plataforma de Visualización y Análisis de Datos Industriales",
+    desc: "Dashboard dinámico que procesa grandes volúmenes de datos en tiempo real para facilitar la toma de decisiones estratégicas y predictivas.",
     img: DataAnalysisIMG,
   },
 ];
@@ -34,18 +34,20 @@ const softwareProjects = [
 export const ServiceSoftware = () => {
   return (
     <PageContainer>
-      <section className="px-4 py-20 mx-auto max-w-7xl text-text-main">
+      <section className="px-4 py-10 mx-auto max-w-7xl text-text-main">
         {/* Intro */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-link">
-            Desarrollo de Software a Medida
+            Software Industrial a Medida, con Precisión y Escalabilidad
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-placeholder">
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-center text-placeholder">
             En <span className="font-semibold text-text-main">Orum</span>,
-            creamos soluciones digitales adaptadas a los desafíos únicos de cada
-            industria. Con foco en escalabilidad, rendimiento y experiencia de
-            usuario, transformamos ideas en plataformas eficientes y robustas
-            que impulsan la productividad.
+            diseñamos soluciones de software personalizadas para automatizar
+            procesos industriales, optimizar la operación y escalar con
+            eficiencia. Trabajamos junto a tu equipo para comprender cada
+            desafío técnico, aplicar tecnologías de vanguardia y entregar
+            plataformas robustas, intuitivas y preparadas para crecer con tu
+            negocio.
           </p>
         </div>
 

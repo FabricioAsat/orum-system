@@ -9,23 +9,23 @@ import { PageContainer } from "@/components/PageContainer";
 
 const consultanciesAreas = [
   {
-    title: "Rubro de Tecnología",
-    desc: "Consultoría integral para implementar y optimizar soluciones tecnológicas personalizadas para tu empresa.",
+    title: "Transformación Tecnológica Estratégica",
+    desc: "Asesoramos a tu empresa en la adopción eficiente de nuevas tecnologías, con foco en automatización, digitalización de procesos y herramientas que escalen con tu operación.",
     img: TechIMG,
   },
   {
-    title: "Desarrollo de Proveedores",
-    desc: "Estrategias para encontrar y consolidar alianzas con proveedores confiables que aseguren eficiencia operativa.",
+    title: "Gestión Eficiente de Proveedores",
+    desc: "Optimizamos la relación con proveedores mediante procesos de evaluación, homologación y seguimiento, fortaleciendo la cadena de suministro con socios confiables y sostenibles.",
     img: SuppliersIMG,
   },
   {
-    title: "Armado de Líneas de Producción",
-    desc: "Diseño de procesos productivos eficientes, garantizando calidad y rendimiento en cada etapa.",
+    title: "Diseño de Líneas de Producción Inteligentes",
+    desc: "Planificamos e implementamos líneas de producción adaptadas a tu entorno industrial, combinando eficiencia operativa con trazabilidad y control de calidad en tiempo real.",
     img: ProductionLineIMG,
   },
   {
-    title: "Adaptación de Normativa Internacional",
-    desc: "Acompañamiento para cumplir con normas internacionales, mejorando competitividad y acceso a nuevos mercados.",
+    title: "Implementación de Normativas Globales",
+    desc: "Te guiamos en la adaptación y cumplimiento de normas internacionales (ISO, CE, etc.), facilitando auditorías, acceso a nuevos mercados y mejora en procesos internos.",
     img: InternationalStandardsIMG,
   },
 ];
@@ -33,17 +33,21 @@ const consultanciesAreas = [
 export const ServiceConsultancies = () => {
   return (
     <PageContainer>
-      <section className="px-4 py-20 mx-auto max-w-7xl text-text-main">
+      <section className="px-4 py-10 mx-auto max-w-7xl text-text-main">
         {/* Intro */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-link">
             Asesoría Tecnológica para PYMEs
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-placeholder">
-            En <span className="font-semibold text-text-main">Orum</span> te
-            acompañamos en el camino hacia la modernización. Brindamos
-            asesoramiento experto para potenciar tus procesos, cumplir
-            normativas internacionales y escalar tecnológicamente con confianza.
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-center text-placeholder">
+            En <span className="font-semibold text-text-main">Orum</span>,
+            impulsamos la transformación tecnológica de pequeñas y medianas
+            empresas mediante asesoría especializada. Nuestro equipo acompaña a
+            cada organización en el análisis, planificación y ejecución de
+            estrategias que optimizan procesos, fortalecen la cadena de
+            suministro y adaptan la infraestructura productiva a estándares
+            internacionales. Desde la idea inicial hasta la implementación,
+            transformamos desafíos técnicos en soluciones reales y escalables.
           </p>
         </div>
 

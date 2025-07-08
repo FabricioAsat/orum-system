@@ -69,22 +69,32 @@ export const Footer = () => {
         </Link>
         <Link
           className="transition-colors duration-200 ease-in-out hover:text-placeholder"
-          to={"/services"}
-        >
-          Servicios
-        </Link>
-        <Link
-          className="transition-colors duration-200 ease-in-out hover:text-placeholder"
-          to={"/"}
-        >
-          Trabaja con nosotros
-        </Link>
-        <Link
-          className="transition-colors duration-200 ease-in-out hover:text-placeholder"
-          to={"/"}
+          to={"/contact"}
         >
           Contacto
         </Link>
+
+        <Link
+          className="transition-colors duration-200 ease-in-out hover:text-placeholder"
+          to={"/services/electronic"}
+        >
+          Ingeniería electrónica
+        </Link>
+        <Link
+          className="transition-colors duration-200 ease-in-out hover:text-placeholder"
+          to={"/services/software"}
+        >
+          Software a medida
+        </Link>
+        <Link
+          className="transition-colors duration-200 ease-in-out hover:text-placeholder"
+          to={"/services/consultancies"}
+        >
+          Asesoría técnica
+        </Link>
+        <button className="italic line-through transition-colors duration-200 ease-in-out text-text-muted/50">
+          Trabaja con nosotros
+        </button>
       </nav>
 
       <div className="pt-3 mt-5 text-xs border-t text-placeholder border-border">

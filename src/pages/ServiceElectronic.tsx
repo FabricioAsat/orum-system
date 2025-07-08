@@ -9,23 +9,23 @@ import YourProjectIMG from "@assets/svg/services/your-project.svg";
 
 const projects = [
   {
-    title: "Control CNC para Guillotinas y Plegadoras",
-    desc: "Diseño y producción de controlador CNC para guillotinas y plegadoras industriales.",
+    title: "Sistema CNC para Guillotinas y Plegadoras",
+    desc: "Diseño y fabricación de controladores CNC de alta precisión para equipos industriales de corte y doblado, mejorando la automatización y la seguridad en planta.",
     img: CNCIMG,
   },
   {
-    title: "Placa de Control para Equipos de Medición",
-    desc: "Desarrollo de línea automatizada para placas de control en equipos de medición de frenos, suspensión y alineación vehicular.",
+    title: "Placa Inteligente para Equipos de Diagnóstico Vehicular",
+    desc: "Desarrollo de una línea automatizada de producción para placas de control integradas en sistemas de medición de frenos, suspensión y alineación.",
     img: ControlBoardIMG,
   },
   {
-    title: "Core para Respirador Artificial",
-    desc: "Diseño de una placa microprocesada para el core de un respirador artificial 100% automatizado.",
+    title: "Core Electrónico para Respiradores Automatizados",
+    desc: "Diseño y validación de una placa microprocesada de alto rendimiento para respiradores artificiales con control totalmente automatizado.",
     img: RespiratorCoreIMG,
   },
   {
-    title: "Instrumentación y Sensores Inteligentes",
-    desc: "Desarrollo de sensores y sistemas de instrumentación para monitoreo en tiempo real de variables críticas.",
+    title: "Sensores Inteligentes e Instrumentación Industrial",
+    desc: "Diseño de soluciones para la recolección y monitoreo en tiempo real de variables críticas mediante sensores inteligentes e instrumentación embebida.",
     img: SmartSensorsIMG,
   },
 ];
@@ -38,15 +38,17 @@ export const ServiceElectronic = () => {
         {/* Intro */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-link">
-            Ingeniería Electrónica en Orum
+            Ingeniería Electrónica con Precisión Industrial
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-placeholder">
-            En <span className="font-semibold text-text-main">Orum</span>, nos
-            especializamos en el diseño y desarrollo de soluciones electrónicas
-            a medida para la industria. Nuestro equipo trabaja desde el diseño
-            de circuitos hasta la implementación de sistemas embebidos,
-            priorizando siempre la innovación tecnológica y la eficiencia de
-            cada proceso.
+            En <span className="font-semibold text-text-main">Orum</span>,
+            diseñamos y desarrollamos soluciones electrónicas a medida,
+            adaptadas a los desafíos de la industria moderna. Nuestro equipo de
+            ingenieros acompaña cada proyecto desde su concepción hasta su
+            implementación, abarcando diseño de circuitos, prototipado y
+            sistemas embebidos. Nos enfocamos en la optimización de procesos, la
+            confiabilidad operativa y la innovación tecnológica como pilares
+            clave para potenciar la productividad de nuestros clientes.
           </p>
         </div>
 
