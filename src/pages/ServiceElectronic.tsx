@@ -34,7 +34,7 @@ export const ServiceElectronic = () => {
   return (
     <PageContainer>
       {" "}
-      <section className="px-4 py-20 mx-auto max-w-7xl text-text-main">
+      <section className="px-4 py-10 mx-auto max-w-7xl text-text-main">
         {/* Intro */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-link">
