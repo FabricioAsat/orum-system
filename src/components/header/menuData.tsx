@@ -3,6 +3,7 @@ import { ElectronicSVG } from "@/components/svg-tsx/ElectronicSVG";
 import { SoftwareSVG } from "@/components/svg-tsx/SoftwreSVG";
 
 export const navLinks = [
+  { label: "Inicio", to: "/" },
   { label: "Nosotros", to: "/about" },
   { label: "Familia Logic", to: "/logic-family" },
   {
@@ -26,19 +27,4 @@ export const navLinks = [
     ],
   },
   { label: "Contacto", to: "/contact" },
-  {
-    label: "Descargas",
-    dropdown: [
-      {
-        label: "Logic TR Brochure",
-        to: "/download/logic-tr",
-        icon: <SoftwareSVG className="p-1 h-8" />,
-      },
-      {
-        label: "Logic T Brochure",
-        to: "/download/logic-t",
-        icon: <SoftwareSVG className="p-1 h-8" />,
-      },
-    ],
-  },
 ];

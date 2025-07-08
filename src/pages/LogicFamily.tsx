@@ -32,11 +32,11 @@ export const LogicFamily = () => {
       </aside>
 
       <section className="relative px-4 py-8 mx-auto w-full max-w-7xl">
-        <div className="flex flex-col justify-center items-center mx-auto mb-10 max-w-xl">
-          <h2 className="text-xl font-extrabold md:text-2xl xl:text-3xl">
+        <div className="flex flex-col justify-start items-center lg:items-start mb-10 max-w-3xl">
+          <h2 className="text-2xl font-extrabold md:text-3xl xl:text-4xl">
             Familia Logic
           </h2>
-          <p className="mt-3 text-xs italic text-center md:text-sm text-placeholder">
+          <p className="mt-3 text-base italic md:text-lg text-text-muted text-center lg:text-start">
             Logic es una suite modular de software empresarial que integra lo
             mejor de la tecnología actual para transformar, automatizar y
             simplificar tus procesos productivos y de gestión.
