@@ -44,16 +44,15 @@ export const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 w-full font-bold rounded-full transition cursor-pointer bg-primary hover:bg-primary-hover text-background sm:w-auto"
+            
           >
-            <Link to={"/contact"}>Contacta ya →</Link>
+            <Link className="px-6 py-2 w-full font-bold rounded-full transition cursor-pointer bg-primary hover:bg-primary-hover text-background sm:w-auto" to={"/contact"}>Contacta ya →</Link>
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 w-full font-bold text-white rounded-full border-2 transition cursor-pointer border-border hover:bg-surface/50 sm:w-auto"
           >
-            <Link to={"/about"}>Saber más</Link>
+            <Link className="px-6 py-2 w-full font-bold text-white rounded-full border-2 transition cursor-pointer border-border hover:bg-surface/50 sm:w-auto" to={"/about"}>Saber más</Link>
           </motion.button>
         </nav>
       </div>

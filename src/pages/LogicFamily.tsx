@@ -89,9 +89,8 @@ export const LogicFamily = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-6 py-3 font-bold rounded-full transition-colors duration-300 cursor-pointer md:text-lg text-surface bg-primary hover:bg-primary-hover"
             >
-              <Link to="/contact">Consulta ya!</Link>
+              <Link className="inline-block px-6 py-3 font-bold rounded-full transition-colors duration-300 cursor-pointer md:text-lg text-surface bg-primary hover:bg-primary-hover" to="/contact">Consulta ya!</Link>
             </motion.button>
           </div>
         </div>
