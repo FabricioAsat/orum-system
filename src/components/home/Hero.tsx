@@ -17,7 +17,10 @@ export const Hero = () => {
   }
 
   return (
-    <section className="flex overflow-hidden relative justify-center items-start px-6 py-24 w-full sm:pt-24 sm:pb-32">
+    <section
+      id="hero"
+      className="flex overflow-hidden relative justify-center items-start px-6 py-24 w-full sm:pt-24 sm:pb-32"
+    >
       {/* Líneas verticales con desenfoque radial */}
       <div className="absolute inset-0 z-0 pointer-events-none lines-mask" />
 
@@ -44,15 +47,24 @@ export const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            
           >
-            <Link className="px-6 py-2 w-full font-bold rounded-full transition cursor-pointer bg-primary hover:bg-primary-hover text-background sm:w-auto" to={"/contact"}>Contacta ya →</Link>
+            <Link
+              className="px-6 py-2 w-full font-bold rounded-full transition cursor-pointer bg-primary hover:bg-primary-hover text-background sm:w-auto"
+              to={"/contact"}
+            >
+              Contacta ya →
+            </Link>
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link className="px-6 py-2 w-full font-bold text-white rounded-full border-2 transition cursor-pointer border-border hover:bg-surface/50 sm:w-auto" to={"/about"}>Saber más</Link>
+            <Link
+              className="px-6 py-2 w-full font-bold text-white rounded-full border-2 transition cursor-pointer border-border hover:bg-surface/50 sm:w-auto"
+              to={"/about"}
+            >
+              Saber más
+            </Link>
           </motion.button>
         </nav>
       </div>
@@ -82,6 +94,8 @@ export const Hero = () => {
             imgSrc={linkedinSVG}
             alt="LinkedIn svg"
             glowColor="#38d8d2"
+            newTab={false}
+            href="/#hero"
           />
         </button>
       </nav>

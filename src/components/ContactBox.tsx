@@ -13,7 +13,7 @@ export const ContactBox = ({
   imgSrc,
   alt = "",
   glowColor = "#38d8d2",
-  href,
+  href = "/#",
   newTab = true,
 }: IconGlowBoxProps) => {
   return (

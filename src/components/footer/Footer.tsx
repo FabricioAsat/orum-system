@@ -17,7 +17,10 @@ export const Footer = () => {
   }
 
   return (
-    <footer className="flex flex-col items-start px-6 py-5 text-white md:px-20">
+    <footer
+      id="footer"
+      className="flex flex-col items-start px-6 py-5 text-white md:px-20"
+    >
       <div className="flex flex-col gap-y-5 justify-between items-center mb-5 w-full md:flex-row">
         <nav>
           <Logo />
@@ -49,6 +52,8 @@ export const Footer = () => {
               imgSrc={linkedinSVG}
               alt="LinkedIn svg"
               glowColor="#1b1a1d"
+              newTab={false}
+              href="/#footer"
             />
           </button>
         </nav>
