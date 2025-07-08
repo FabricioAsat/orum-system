@@ -42,8 +42,9 @@ export const LogicFamily = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="mt-8"
             >
-              <Link className="px-4 py-2 mt-8 font-bold rounded-xl transition duration-200 cursor-pointer text-surface bg-link hover:bg-link-hover" to={"/logic-family"}>Ver familia</Link>
+              <Link className="px-4 py-2 font-bold rounded-xl transition duration-200 cursor-pointer text-surface bg-link hover:bg-link-hover" to={"/logic-family"}>Ver familia</Link>
             </motion.button>
           </div>
         </div>
