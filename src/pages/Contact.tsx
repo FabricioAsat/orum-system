@@ -1,26 +1,22 @@
 import { useState } from "react";
 
 import { ContactForm } from "@/components/contact/ContactForm";
-import { Modal } from "@/components/contact/Modal";
-import { ContactBox } from "@/components/ContactBox";
+import { Modal } from "@/components/Modal";
 import { PageContainer } from "@/components/PageContainer";
-
-import whatsappSVG from "@assets/svg/whatsapp.svg";
-import linkedinSVG from "@assets/svg/linkedin.svg";
-import instagramSVG from "@assets/svg/instagram.svg";
-import mailSVG from "@assets/svg/mail.svg";
 
 export const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <PageContainer>
-      <div className="grid lg:grid-cols-2 gap-8 items-start">
+      <div className="grid gap-8 items-start lg:grid-cols-2">
         {/* Info de contacto */}
-        <div className="text-text-muted space-y-4 hidden lg:block mt-10">
+        <div className="px-2 mx-auto mt-10 space-y-4 w-full max-w-xl text-text-muted">
           <span className="flex flex-col w-full">
-            <h2 className="text-3xl font-bold text-text-main">Contacto</h2>
-            <p className="text-text-muted font-semibold text-lg">
+            <h2 className="text-3xl font-bold text-center text-text-main lg:text-start">
+              Contacto
+            </h2>
+            <p className="text-lg font-semibold text-text-muted">
               Estamos disponibles para ayudarte.
             </p>
             <p className="text-sm italic text-warning">
@@ -39,6 +35,10 @@ export const Contact = () => {
               +54 9 11 3802 4126
             </p>
             <p>
+              <span className="font-semibold text-text-main">Instagram:</span>{" "}
+              @orum.system
+            </p>
+            <p>
               <span className="font-semibold text-text-main">
                 Soporte técnico:{" "}
               </span>{" "}
@@ -48,10 +48,14 @@ export const Contact = () => {
               <span className="font-semibold text-text-main">Ventas:</span>{" "}
               ventas@orum-system.com
             </p>
+            <p className="italic text-text-muted">
+              <span className="font-semibold">LinkedIn:</span> En
+              construcción...
+            </p>
           </div>
         </div>
 
-        <div className="rounded-xl p-2 lg:border lg:border-input-border shadow-md max-w-2xl mx-auto w-full">
+        <div className="p-2 mx-auto w-full max-w-2xl rounded-xl shadow-md lg:border lg:border-input-border">
           <ContactForm setShowModal={setShowModal} />
         </div>
       </div>

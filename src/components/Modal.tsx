@@ -12,7 +12,7 @@ export function Modal({ show, onClose, title, message }: ModalProps) {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+          className="flex fixed inset-0 z-50 justify-center items-center backdrop-blur-sm bg-black/50"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -22,16 +22,16 @@ export function Modal({ show, onClose, title, message }: ModalProps) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="bg-surface text-text-main rounded-xl p-6 w-full max-w-md shadow-lg border border-input-border"
+            className="flex flex-col items-start p-6 w-full max-w-md rounded-xl border shadow-lg bg-surface text-text-main border-input-border"
           >
             {title && (
-              <h3 className="text-xl font-bold mb-2 text-error">{title}</h3>
+              <h3 className="mb-2 text-xl font-bold text-error">{title}</h3>
             )}
-            <p className="text-text-muted mb-4">{message}</p>
-            <div className="flex justify-end">
+            <p className="mb-4 text-text-muted text-start">{message}</p>
+            <div className="flex justify-end w-full">
               <button
                 onClick={onClose}
-                className="px-4 py-2 bg-primary text-surface font-semibold rounded-md hover:bg-primary-hover cursor-pointer transition-colors duration-200"
+                className="px-4 py-2 font-semibold rounded-md transition-colors duration-200 cursor-pointer bg-primary text-surface hover:bg-primary-hover"
               >
                 Cerrar
               </button>
