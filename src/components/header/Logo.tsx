@@ -1,4 +1,4 @@
-import logoIMG from "@assets/logo-orum.jpg";
+import logoIMG from "@assets/logo-orum.webp";
 import { NavLink } from "react-router-dom";
 
 export const Logo = () => {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import logicIMG from "@assets/logic.jpg";
+import logicIMG from "@assets/logic.webp";
 import { PageContainer } from "@/components/PageContainer";
 import { LogicT } from "@/components/logic-family/LogicT";
 import { LogicP } from "@/components/logic-family/LogicP";
@@ -90,7 +90,12 @@ export const LogicFamily = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link className="inline-block px-6 py-3 font-bold rounded-full transition-colors duration-300 cursor-pointer md:text-lg text-surface bg-primary hover:bg-primary-hover" to="/contact">Consulta ya!</Link>
+              <Link
+                className="inline-block px-6 py-3 font-bold rounded-full transition-colors duration-300 cursor-pointer md:text-lg text-surface bg-primary hover:bg-primary-hover"
+                to="/contact"
+              >
+                Consulta ya!
+              </Link>
             </motion.button>
           </div>
         </div>

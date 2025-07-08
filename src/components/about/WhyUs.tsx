@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import focusIMG from "@assets/focus.jpg";
-import innovationIMG from "@assets/innovation.jpg";
-import engineerIMG from "@assets/engineer.jpg";
+import focusIMG from "@assets/focus.webp";
+import innovationIMG from "@assets/innovation.webp";
+import engineerIMG from "@assets/engineer.webp";
 
 const features = [
   {

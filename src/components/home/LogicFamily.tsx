@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import logicIMG from "@assets/logic.jpg";
+import logicIMG from "@assets/logic.webp";
 
 export const LogicFamily = () => {
   return (
@@ -44,7 +44,12 @@ export const LogicFamily = () => {
               whileTap={{ scale: 0.95 }}
               className="mt-8"
             >
-              <Link className="px-4 py-2 font-bold rounded-xl transition duration-200 cursor-pointer text-surface bg-link hover:bg-link-hover" to={"/logic-family"}>Ver familia</Link>
+              <Link
+                className="px-4 py-2 font-bold rounded-xl transition duration-200 cursor-pointer text-surface bg-link hover:bg-link-hover"
+                to={"/logic-family"}
+              >
+                Ver familia
+              </Link>
             </motion.button>
           </div>
         </div>

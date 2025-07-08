@@ -1,6 +1,6 @@
 import { PageContainer } from "@components/PageContainer";
 
-import logoIMG from "@assets/logo-orum.jpg";
+import logoIMG from "@assets/logo-orum.webp";
 
 import { WhoUs } from "@/components/about/WhoUs";
 import { WhyUs } from "@/components/about/WhyUs";
